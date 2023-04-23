@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    <title>t1</title>
+
+</head>
+
+<body>
+    <p id="firstP">firstP
+    <p>
+        <script type="text/javascript" defer>
+            function addNode() {
+                var newP = document.createElement("a");
+                var textNode = document.createTextNode(" This is a new text node");
+                newP.appendChild(textNode);
+                document.getElementById("firstP").appendChild(newP);
+            }
+            addNode();
+        </script>
+</body>
+
+</html>
